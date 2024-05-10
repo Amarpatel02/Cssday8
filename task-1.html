@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        height: 500px;
+        border: 1px solid;
+        text-align: center;
+        position: relative;
+        background-color: rgb(172, 213, 230);
+      }
+      .ball {
+        width: 50px;
+        height: 50px;
+        margin-top: 448px;
+        margin-left: 10px;
+        background-color: cadetblue;
+        border-radius: 50%;
+        animation-name:box;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+      }
+
+      .b1 {
+        animation-duration: 2s;
+        display: inline-block;
+      }
+
+      .b2 {
+        animation-delay: 1s;
+        display: inline-block;
+        animation-direction: reverse;
+      }
+
+      .b3{
+        animation-delay:0.5s;
+        display: inline-block;
+      }
+
+      .b4 {
+        animation-delay: 2s;
+        display: inline-block;
+        animation-direction: reverse;
+      }
+
+
+      @keyframes box {
+        0% {
+          top: 0px;
+        }
+        50% {
+          top: -200px; background-color:lightpink;
+        }
+        100% {
+          top: 0px;background-color:lightseagreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="ball b1"></div>
+      <div class="ball b2"></div>
+      <div class="ball b3"></div>
+      <div class="ball b4"></div>
+
+
+    </div>
+  </body>
+</html>
